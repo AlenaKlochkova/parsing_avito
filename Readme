@@ -1,0 +1,10 @@
+Python версия 3.10.2
+
+Selenium  4.1.2
+PyTest    7.0.1
+
+pip install selenium
+pip install pytest
+
+Для запуска парсера: python avito.py
+Для запуска тeстирования: pytest test_avito.py
