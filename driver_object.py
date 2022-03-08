@@ -9,10 +9,9 @@ class Driver_Object():
     def __init__(self, driver):
         self.driver = driver
 
+    """Переходит по указанной ссылке"""
     def go_to(self, link):
-
-        """Переходит по указанной ссылке"""
-
+        
         self.driver.get(link)
 
     def loading(self, selector):
