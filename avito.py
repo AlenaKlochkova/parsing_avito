@@ -4,7 +4,12 @@ from avito_object import Avito_Object
 import constants
 
 
-driver = webdriver.Firefox()
+PROXY_STR = "111.222.111.222:1234"
+
+options = webdriver.FirefoxOptions()
+options.add_argument('--proxy-server=%s' % PROXY_STR)
+
+driver = webdriver.Firefox(options=options)
 yandex = Yandex_Object(driver)
 avito = Avito_Object(driver)
 
